@@ -1,0 +1,92 @@
+.table-box{
+    height: 300px;
+    width: 100%;
+}
+.table-box .MuiDataGrid-main{
+    border: 1px solid #cdcdcd ;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.table-box .MuiDataGrid-columnHeader{
+    background-color: var(--color-table-header);
+    font-weight: 700;
+    color: #000;
+    height: 45px !important;
+}
+.table-box .MuiDataGrid-columnHeaderTitleContainer, .table-box .MuiDataGrid-columnHeaders, .table-box .MuiDataGrid-cell,
+.table-box .MuiDataGrid-virtualScrollerContent, .table-box .MuiDataGrid-row{
+    height: 45px !important;
+    min-height: 45px !important;
+    line-height: 45px !important;
+}
+.table-box .MuiDataGrid-virtualScroller{
+    margin-top: 45px !important;
+}
+.table-box .MuiDataGrid-cell {
+    color: #000;
+    background-color: var(--color-white);   
+}
+.table-box .MuiDataGrid-cell, .table-box .MuiDataGrid-columnHeader {
+    outline: none !important;
+}
+.table-box .MuiDataGrid-virtualScrollerRenderZone .MuiDataGrid-row:nth-child(even) .MuiDataGrid-cell,
+.table-box .MuiDataGrid-virtualScrollerRenderZone .MuiDataGrid-row:nth-child(even):hover .MuiDataGrid-cell,
+.table-box .MuiDataGrid-row.Mui-selected{
+    background: rgba(231, 231, 231, 0.3) !important;
+}
+.table-box .MuiDataGrid-columnSeparator{
+    display: none !important;
+}
+.table-box .MuiDataGrid-columnHeader .MuiDataGrid-iconButtonContainer{
+    visibility: visible !important;
+    width: 15px;
+    height: 15px;
+    background-image: url('../../assets//images/shorting-arrow.svg');
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+.table-box .MuiDataGrid-columnHeader .MuiDataGrid-iconButtonContainer svg{
+    display: none;
+}
+.table-box .MuiDataGrid-footerContainer{
+    border: none;
+    min-height: unset;
+}
+.table-box .MuiPagination-ul{
+    overflow: hidden;
+    margin-top: 15px !important;
+}
+.table-box .MuiPagination-ul li button{
+    margin: 0;
+    color: #6c757d;
+    font-size: 12px;
+    line-height: 15px;
+    border-radius: 0 !important;
+    border: 1px solid #cdcdcd;
+    position: relative;
+}
+.table-box .MuiPagination-ul li button.Mui-selected{
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border-color: var(--color-secondary) !important;
+}
+.table-box .MuiPagination-ul li button.Mui-selected:hover{
+    background-color: #000;
+}
+.table-box .MuiPagination-ul li:first-child button{
+    border-radius:  5px 0 0 5px !important;    
+}
+.table-box .MuiPagination-ul li:last-child button{
+    border-radius: 0 5px 5px 0 !important;
+}
+.table-box .MuiPagination-ul li:last-child button svg, .table-box .MuiPagination-ul li:first-child button svg{
+    display: none;
+}
+.table-box .MuiPagination-ul li:last-child button:after, .table-box .MuiPagination-ul li:first-child button::after{
+    content: "Next";    
+    padding: 0 5px;   
+    display: inline-block;
+}
+.table-box .MuiPagination-ul li:first-child button::after{
+    content: "Previous";
+}
